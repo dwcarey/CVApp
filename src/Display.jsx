@@ -8,8 +8,7 @@ function Display({
     return (
       <div>
         
-        <h3>Personal Details</h3>
-        <p>{personalData.firstName}{personalData.lastName}</p>
+        <h4 className="nameText">{personalData.firstName} {personalData.lastName}</h4>
         <p>Age: {personalData.age}</p>
         <p>Location: {personalData.location}</p>
   

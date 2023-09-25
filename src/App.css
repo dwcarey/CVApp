@@ -25,16 +25,49 @@ background-color: rgb(24, 13, 88);
 
 .formContainer {
  grid-area: b;
+ background-color: rgb(24, 13, 88);    
+ padding: 2vw;
+ padding-top: 0;
 }
 
 .formContainer>div {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     padding: 2vw;
+    background-color: aliceblue;
+    border-radius: 1rem;
+}
+
+h2, h3, h4 {
+    grid-column: span 2;
+}
+
+.nameText {
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.addButton {
+    grid-column: span 2;
+    width: 15vw;
+    justify-self: right;
+    margin-top: 1vh;
 }
 
 .displayContainer {
+ 
 grid-area: c;
+padding: 2vw;   
+padding-top: 0;
+background-color: rgb(24, 13, 88);
+}
+
+.displayContainer>div {
+    background-color: aliceblue;
+    padding: 2vw;  
+    border-radius: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .footer {
@@ -48,10 +81,35 @@ grid-area: c;
     padding-right: 2vw;
 }
 
+input {
+    margin: 2px;
+    border: 1px thin black;
+    height: 2vh;
+}
 
+button {
+    appearance: none;
+    border: none;
+    margin: 2px;
+    border: 1px thin black;
+    height: 2.5vh;
+    background-color: rgb(24, 13, 88);
+    color: azure;
+    font-size: 0.9rem;
+    border-radius: 5px;
+}
+
+
+h1, h2, h3, h4 {
+    margin: 0;
+    color: rgb(24, 13, 88);
+}
 
 h1 {
-    margin: 0;
-    padding: 1vh;
     color: azure;
+    padding: 1vh;
+}
+
+h2 {
+    margin-top: 1vh;
 }
