@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+}
+
+.appContainer {
+    height: 100dvh;
+    width: 100dvw;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-areas: 
+    'a a a a a a a a'
+    'b b b b c c c c'
+    'b b b b c c c c'
+    'b b b b c c c c'
+    'b b b b c c c c'
+    'b b b b c c c c'
+    'd d d d d d d d';
+}
+
+.headerText {
+grid-area: a;
+text-align: center;
+background-color: rgb(24, 13, 88);
+}
+
+.formContainer {
+ grid-area: b;
+}
+
+.formContainer>div {
+    display: flex;
+    flex-direction: column;
+    padding: 2vw;
+}
+
+.displayContainer {
+grid-area: c;
+}
+
+.footer {
+    background-color: rgb(24, 13, 88);
+    grid-area: d;
+}
+
+.footer>p {
+    color: azure;
+    text-align: right;
+    padding-right: 2vw;
+}
+
+
+
+h1 {
+    margin: 0;
+    padding: 1vh;
+    color: azure;
+}

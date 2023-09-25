@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+
 function Form() {
   const [personalData, setPersonalData] = useState({
     firstName: "",
@@ -33,6 +34,12 @@ function Form() {
   function removeQualification(index) {
     const updatedQualificationData = [...qualificationData];
     updatedQualificationData.splice(index, 1);
+    setQualificationData(updatedQualificationData);
+  }
+
+  function updateQualificationData(index, field, value) {
+    const updatedQualificationData = [...qualificationData];
+    updatedQualificationData[index][field] = value;
     setQualificationData(updatedQualificationData);
   }
 
@@ -71,7 +78,6 @@ function Form() {
 
   return (
     <div>
-      <h1>Form</h1>
       <h2>Personal Details</h2>
       <input
         type="text"
