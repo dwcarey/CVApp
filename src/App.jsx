@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import Form from './Form';
 import Display from './Display';
@@ -43,12 +43,12 @@ function App() {
       </div>
       <div className='displayContainer'>
         <Display
-  personalData={formData.personalData}
-  contactData={formData.contactData}
-  qualificationData={formData.qualificationData}
-  employmentData={formData.employmentData}
-  otherInfoData={formData.otherInfoData}
-/>
+        personalData={formData.personalData}
+        contactData={formData.contactData}
+        qualificationData={formData.qualificationData}
+        employmentData={formData.employmentData}
+        otherInfoData={formData.otherInfoData}
+      />
 
       </div>
       <div className='footer'>
